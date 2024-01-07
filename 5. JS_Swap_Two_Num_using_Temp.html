@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        // 1. Swapping using temporary variable.
+
+        var a = prompt('Please Enter the First value');
+        var b = prompt('Please Enter the Second value');
+        console.log(`The value of a is: ${a}, The value of b is: ${b}`);
+
+        var temp;
+        temp = a; // temp = 5
+        a = b; // a = 6
+        b = temp;
+        console.log(`After Swapping \n The value of a is: ${a}, The value of b is: ${b}`);
+
+        // 2. Swapping without using temporary variable.
+        /* a = 5 and b = 6
+           a = a+b(5+6 =11) | a = 11
+           b = a-b(11-6 =5) | b = 5
+           a = a-b(11-5 =6) | a = 6 */a
+
+           /*We have to use --parseInt-- because we will use Addition, whenever we use addition
+             then we have to convert string value(given by user) into Integer, parseInt convert 
+             String value into Integer*/
+        
+        var d = parseInt(prompt('Please Enter the First value'));
+        var e = parseInt(prompt('Please Enter the Second value'));
+        console.log(`The value of d is: ${d}, The value of e is: ${e}`);
+        d = d+e;
+        e = d-e;
+        d = d-e;
+
+        console.log(`After Swapping \nThe value of d is: ${d}, The value of e is: ${e}`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Script type="text/javascript">
+        /* Genral Formula: (base * height)/2;
+
+        We will take the base and height measurement from the user and will 
+        calculate athe area of the right angled triangle.*/
+        
+        var base = prompt('Pleae Enter the base value');
+        var height = prompt('Please enter the height value');
+        var area = (base * height)/2;
+        console.log(area);
+
+
+        /*To find the area of regular triangle
+
+        If you know all the sides of a trangle, you can find the area using Heron' formula. 
+        If a, b and c are the three sides of a triangle, then 
+
+        Genral Formula: s = (a+b+c)/2
+        area = Squareroot sign then s(s-a)*(s-b)*(s-c)
+        */
+
+        var a = 10;
+        var b = 5;
+        var c = 10;
+        var s = (a+b+c)/2;
+        var temp = s*(s-a)*(s-b)*(s-c); 
+
+        // Now we have to find its Square-Root, Now crate new vriable
+        var area = Math.sqrt(temp);
+
+        console.log(area);
+    </Script>
+</head>
+<body>
+    
+</body>
+</html>
